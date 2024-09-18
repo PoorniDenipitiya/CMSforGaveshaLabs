@@ -1,0 +1,56 @@
+.myCollectionBlogs{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  font-size: 20px;
+  font-family: 'https://fonts.googleapis.com/css?family=PT Sans';
+  height:fit-content;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  column-gap: 150px;
+}
+
+.myCollectonUser{
+  margin-top: 10px;
+  margin-bottom: auto;
+  text-align: center;  
+}
+
+.myCollectionImg{
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.myCollectionHeaderText{
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.myCollectionText{
+  margin-left: 150px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.myCollectionLine {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.blog-post-list {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+ 
+}
+
+.blog-post-list p {
+  text-align: center; /* Center align message when no blog posts found */
+  margin-top: 20px; /* Add margin at the top */
+}

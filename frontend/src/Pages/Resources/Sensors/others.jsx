@@ -1,0 +1,149 @@
+import React, { useEffect, useState } from "react";
+import {Link, useLocation } from "react-router-dom";
+import "./Sensors.css";
+import "./Sidebar.css";
+import Resourcepost from "../Resourcepost";
+import { URL } from "../../../url"; // Assuming URL is correctly imported from 'url.js'
+import axios from "axios";
+
+export const Others = () => {
+  const { search } = useLocation();
+  const [noResults, setNoResults] = useState(false);
+  const [resoPosts, setResoPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(6);
+
+  const location = useLocation();
+  const currentCategory = new URLSearchParams(location.search).get("category");
+
+  const getLinkClassName = (category) => {
+    return currentCategory === category ? "nav active" : "nav";
+  };
+
+  const fetchResoPosts = async () => {
+    try {
+      const res = await axios.get(`${URL}/api/resoposts`);
+      setResoPosts(res.data.filter(
+        (resoPost) => resoPost.approved
+      ));
+      setNoResults(res.data.length === 0);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  
+  useEffect(() => {
+    fetchResoPosts();
+  }, []);
+
+  const queryParams = new URLSearchParams(search);
+  const selectedCategory = queryParams.get('category');
+
+  const filteredPosts = selectedCategory
+    ? resoPosts.filter(post => post.categories.includes(selectedCategory))
+    : resoPosts;
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  return (
+    <div className="sensorsCollect">
+      
+      <div className="sidebar">
+      <table>
+        {/* <thead>
+          <tr>
+            <Link to="/others" className={getLinkClassName(null)}>
+              <th>All Categories</th>
+            </Link>
+          </tr>
+        </thead> */}
+        <tbody>
+          <tr>
+            <Link to="/others?category=Codes/Programming" className={getLinkClassName("Codes/Programming")}>
+              <td>Codes/Programming</td>
+            </Link>
+          </tr>
+          <tr>
+            <Link to="/others?category=Power Management" className={getLinkClassName("Power Management")}>
+              <td>Power Management</td>
+            </Link>
+          </tr>
+          <tr>
+            <Link to="/others?category=Prototyping Tools" className={getLinkClassName("Prototyping Tools")}>
+              <td>Prototyping Tools</td>
+            </Link>
+          </tr>
+          <tr>
+            <Link to="/others?category=Enclosures and Cases" className={getLinkClassName("Enclosures and Cases")}>
+              <td>Enclosures and Cases</td>
+            </Link>
+          </tr>
+          <tr>
+            <Link to="/others?category=Networking" className={getLinkClassName("Networking")}>
+              <td>Networking</td>
+            </Link>
+          </tr>
+          <tr>
+            <Link to="/otherscategory=Wireless Communication" className={getLinkClassName("Wireless Communication")}>
+              <td>Wireless Communication</td>
+            </Link>
+          </tr>
+          <tr>
+            <Link to="/others?category=Machine Learning and AI for IoT" className={getLinkClassName("Machine Learning and AI for IoT")}>
+              <td>Machine Learning and AI for IoT</td>
+            </Link>
+          </tr>
+          <tr>
+            <Link to="/others?category=Others" className={getLinkClassName("Others")}>
+              <td>Others</td>
+            </Link>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+      <div className="reso-content-container">
+        <div className="res-posts-container">
+          {filteredPosts.length > 0 ? (
+            currentPosts.map((resoPost) => (
+              <Resourcepost key={resoPost.id} resoPost={resoPost} />
+            ))
+          ) : (
+            <h3>No Posts Available</h3>
+          )}
+          {noResults && <p>No results found for your search.</p>}
+        </div>
+        <Pagination
+          postsPerPage={postsPerPage}
+          totalPosts={filteredPosts.length}
+          paginate={paginate}
+        />
+      </div>
+    </div>
+  );
+};
+
+const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
+  const pageNumbers = [];
+  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
+    pageNumbers.push(i);
+  }
+
+  return (
+    <nav>
+      <ul className="pagination">
+        {pageNumbers.map((number) => (
+          <li key={number} className="page-item">
+            <button onClick={() => paginate(number)} className="page-link">
+              {number}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};

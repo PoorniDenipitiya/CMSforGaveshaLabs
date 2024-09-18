@@ -1,0 +1,195 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+.paused {
+  animation-play-state: paused !important;
+}
+
+
+.project_seemore_container {
+  margin: 2% 10% 5% 10%;
+}
+
+.project_title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: purple;
+  padding-left: 20px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.project_line {
+  background-color: rgb(234, 233, 233);
+  height: 2px;
+  border: none;
+}
+
+.project_inline_user {
+  display: flex;
+}
+.project_userprofile {
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.project_user {
+  padding-left: 20px;
+  line-height: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.project_mail:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.project_image, .project_video{
+  padding: 20px;
+  height: auto;
+  /*margin-left: 30%;
+  text-align: center;*/
+  max-width: 100%;
+  display: block;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.project_figure {
+  font-style: italic;
+  padding-top: 1px;
+  /*margin-left: -52%;*/
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+
+}
+
+.project_head {
+  color: purple;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-left: 20px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.project_describe {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-left: 20px;
+  font-size: large;
+  text-align: justify;
+  white-space: pre-line;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.project_github {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-left: 20px;
+  font-size: large;
+  text-align: justify;
+}
+
+.project_github:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* Add a class for paused animation */
+.related_projects_wrapper.paused {
+  animation-play-state: paused;
+}
+
+/* Container for related projects */
+.related_projects_section {
+  overflow: hidden; /* Hide the overflow content */
+  white-space: nowrap; /* Prevent line breaks */
+  width: 100%; /* Full width container */
+  position: relative; /* Relative positioning for inner scrolling */
+}
+
+/* Wrapper for the scrolling content */
+.related_projects_wrapper {
+  display: inline-block; /* Allow inline scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: scroll-left 20s linear infinite; /* Apply the scrolling animation */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Start at the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left */
+  }
+}
+
+.related_project_item {
+  display: inline-block; /* Inline block items */
+  max-width: 350px; /* Fixed width for each project card */
+  margin-right: 20px; /* Space between items */
+}
+.ProjectComments {
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+/* Title styling */
+.projectCommentTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Inside comment section */
+.insideProjectComment {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Input field for comments */
+.ProjectCommentTextArea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .ProjectComments {
+    /* Adjust styles for 1200px viewport width */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectCommentTitle {
+    font-size: 20px; /* Example of font-size adjustment for 768px */
+  }
+  .ProjectCommentTextArea {
+    font-size: 14px; /* Example of font-size adjustment for 768px */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projectCommentTitle {
+    font-size: 18px; /* Example of font-size adjustment for 480px */
+  }
+  .ProjectCommentTextArea {
+    font-size: 12px; /* Example of font-size adjustment for 480px */
+  }
+}

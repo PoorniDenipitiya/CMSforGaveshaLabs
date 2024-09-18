@@ -1,0 +1,86 @@
+.proAdmin_content {
+  margin-left: 19%;
+  margin-right: 2%;
+  height: 100%;
+  display: grid;
+  gap: 1px;
+  top:70px;
+ /* background-color: rgb(192, 159, 196);*/
+padding: 10px;
+}
+
+.proAdmin_filter-dropdown {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.proAdmin_filter-dropdown label {
+  font-size: 18px;
+}
+
+.proAdmin_filter-dropdown select {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.proAdmin_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.proAdmin_tr {
+ 
+  background-color: rgb(231, 189, 237);
+}
+
+.proAdmin_th,
+.proAdmin_td {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.proAdmin_th {
+  background-color: #e9ecef;
+}
+
+.proAdmin_td {
+  text-align: center;
+}
+
+.proAdmin_tr:hover {
+    background-color: #f2f2f2;
+  }
+.proAdmin_pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.proAdmin_pagination-button {
+  padding: 10px 15px;
+  background-color: #6b2aee; /* Dark purple shade */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proAdmin_pagination-button:hover {
+  background-color: #4e1b9b; /* Darker shade on hover */
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.proAdmin_pagination-button.active {
+  background-color: #4e1b9b; /* Active state color */
+  font-weight: bold;
+  pointer-events: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}

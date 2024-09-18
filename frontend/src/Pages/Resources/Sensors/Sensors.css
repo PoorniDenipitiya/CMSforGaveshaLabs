@@ -1,0 +1,280 @@
+
+.sensorsCollect {
+  display: flex;
+}
+
+.resoTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 25px; /* Increased margin for better spacing */
+}
+
+#motion {
+  font-size: 30px;
+}
+
+.reso-content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.res-posts-container {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.res-post {
+  width: calc(33.33% - 20px); /* Adjusted width for responsiveness */
+  max-width: 300px; /* Maximum width for post cards */
+  flex: 1 0 300px; /* Flex properties to ensure equal width */
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(195, 50, 251, 0.5);
+  transition: all 0.3s ease;
+}
+
+
+.res-post a {
+  color: inherit; /* or specify your desired text color */
+  text-decoration: none; /* removes underline */
+}
+
+.res-post:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Enhanced box shadow on hover */
+  cursor: pointer;
+}
+
+.res-post img {
+  width: 100%;
+  height: 250px; /* Adjusted image height */
+
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.res-post img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.res-post h2 {
+  font-size: 20px; /* Adjusted heading font size */
+  margin-top: 15px; /* Increased margin for spacing */
+}
+
+.res-post p {
+  font-size: 14px; /* Adjusted paragraph font size */
+  margin-top: 5px; /* Increased margin for spacing */
+}
+
+.respostcontent{
+  height: 200px;
+}
+
+.respostcontent p {
+  text-align: justify;
+}
+
+.resuserdetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.resuserdetails p {
+  font-size: 12px; /* Adjust font size for smaller text */
+  color: #4b5563; /* Text color */
+}
+
+.resuserdetails span {
+  font-size: 10px; /* Adjust font size for smaller text */
+  color: #6b7280; /* Lighter text color */
+}
+
+.button-label {
+  padding-bottom: 5px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination .page-item {
+  margin-right: 5px;
+}
+
+.pagination .page-link {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #007bff;
+  padding: 6px 12px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination .page-link:hover {
+  background-color: #e9ecef;
+}
+
+.resuserdetails .authorProfilePicture{
+  width:30px;
+  height: 30px;
+  border: #000;
+  border-radius: 50%;
+  
+}
+
+.resuserdetails .authorInfo {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.resuserdetails .authorInfo p{
+  margin-top: 12px;
+  margin-left: 5px;
+}
+
+.postfooter {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Adjusts spacing between items */
+}
+
+
+.databutton{
+  padding: 8px 15px;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.databutton-icon {
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+    margin-right: 5px; /* Right margin */
+  }
+
+  .databutton {
+    padding: 8px 8px;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-left: 900px;
+  }
+  
+  .databutton:hover {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #bec5cc; /* Adjust color as needed */
+  }
+
+  .datasheet-card {
+    width: calc(33.33% - 20px); /* Adjusted width for responsiveness */
+    max-width: 300px; /* Maximum width for post cards */
+    flex: 1 0 300px; /* Flex properties to ensure equal width */
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(195, 50, 251, 0.5);
+    transition: all 0.3s ease;
+    max-height: 170px;
+  }
+  
+  .datasheet-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Enhanced box shadow on hover */
+    cursor: pointer;
+  }
+  
+  .datapostcontent h3 {
+    margin-bottom: 13px;
+  }
+  
+  .datasheet-card .pdf-link {
+    background-color: #007bff;
+    color: #fff;
+    padding: 4px 8px; /* Smaller padding */
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  
+  .datasheet-card .pdf-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* .datafooter .data-delete-wrapper{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  } */
+  
+  .datafooter .datapost-status{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .datafooter{
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    gap: 135px;
+  }
+
+  .post-status{
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .ResopageSearchDiv {
+    position: relative; /* Positioning context for the search icon */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Center the search bar */
+    margin-bottom: 50px;
+  }
+  
+  .searchBar {
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 7px;
+  }
+  
+  .searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    cursor: pointer;
+    width: 25px; /* Adjust the size of the icon */
+    height: 25px; /* Adjust the size of the icon */
+  }
+
+  .resoresults {
+    margin-top: 60px !important;
+  }
+
+  .datapostfooter{
+    margin-top: 15px;
+  }
+
+  

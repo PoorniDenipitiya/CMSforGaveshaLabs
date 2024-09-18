@@ -1,0 +1,260 @@
+
+/* popularBlogpost.css */
+
+.blog-post-card {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.post-card-content {
+  padding: 16px;
+}
+
+.post-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.post-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.post-details {
+  flex: 1;
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.post-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.BlogCardAuthorInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.authorProfilePicture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.authorUsername {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.blogCardFooterMainDIv {
+  padding: 16px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogCardFooterRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.BlogFooterkButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.insideBlogLike {
+  font-size: 25px;
+  margin-right: 4px;
+}
+
+.likesCount,
+.CommentCount {
+  font-size: 14px;
+  color: #888;
+}
+
+.blogPostDate {
+  font-size: 14px;
+  color: #888;
+}
+
+.bookmarkWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.BlogFooteMarkIcon {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+
+/* Media queries for 1200px */
+@media (max-width: 1200px) {
+  .blog-post-card {
+    width: 90%;
+  }
+
+  .post-image {
+    width: 180px;
+    height: 135px;
+  }
+
+  .post-title {
+    font-size: 18px;
+  }
+
+  .post-description {
+    font-size: 14px;
+  }
+
+  .authorProfilePicture {
+    width: 35px;
+    height: 35px;
+  }
+
+  .authorUsername {
+    font-size: 14px;
+  }
+
+  .insideBlogLike {
+    font-size: 22px;
+  }
+
+  .likesCount,
+  .CommentCount {
+    font-size: 12px;
+  }
+
+  .blogPostDate {
+    font-size: 12px;
+  }
+
+  .BlogFooteMarkIcon {
+    font-size: 18px;
+  }
+}
+
+/* Media queries for 768px */
+@media (max-width: 768px) {
+  .blog-post-card {
+    width: 90%;
+  }
+
+  .post-row {
+    flex-direction: column;
+  }
+
+  .post-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .post-title {
+    font-size: 16px;
+  }
+
+  .post-description {
+    font-size: 14px;
+  }
+
+  .authorProfilePicture {
+    width: 30px;
+    height: 30px;
+  }
+
+  .authorUsername {
+    font-size: 14px;
+  }
+
+  .insideBlogLike {
+    font-size: 20px;
+  }
+
+  .likesCount,
+  .CommentCount {
+    font-size: 12px;
+  }
+
+  .blogPostDate {
+    font-size: 12px;
+  }
+
+  .BlogFooteMarkIcon {
+    font-size: 18px;
+  }
+}
+
+/* Media queries for 480px */
+@media (max-width: 480px) {
+  .blog-post-card {
+    width: 95%;
+  }
+
+  .post-row {
+    flex-direction: column;
+  }
+
+  .post-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .post-title {
+    font-size: 14px;
+  }
+
+  .post-description {
+    font-size: 12px;
+  }
+
+  .authorProfilePicture {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+
+  .authorUsername {
+    font-size: 12px;
+  }
+
+  .insideBlogLike {
+    font-size: 18px;
+  }
+
+  .likesCount,
+  .CommentCount {
+    font-size: 10px;
+  }
+
+  .blogPostDate {
+    font-size: 10px;
+  }
+
+  .BlogFooteMarkIcon {
+    font-size: 16px;
+  }
+}

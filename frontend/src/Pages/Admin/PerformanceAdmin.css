@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  
+}
+
+.admin_content{
+  margin-left: 19%;
+  margin-right: 2%;
+  height: 100%; 
+  display: grid;
+ gap: 1px;
+ padding-top: 100px;
+/*  background-color: rgb(169, 138, 173);*/
+}
+
+.Performance_tr {
+
+background-color: rgb(231, 189, 237);
+}
+
+.Performance_th,
+.Performance_td {
+padding: 10px;
+border: 1px solid #dee2e6;
+text-align: center;
+}
+
+.Performance_th {
+background-color: #e9ecef;
+}
+
+.Performance_td {
+text-align: center;
+}
+
+.Performance_tr:hover {
+  background-color: #f2f2f2;
+}
+
+
+.performance_downloadbutton{
+padding: 5px;
+border-radius: 20px;
+background-color: rgb(95, 95, 228);
+color:white;
+
+}
+
+.admin_label_performance{
+  display: inline-flex;
+  margin: 5px;
+}

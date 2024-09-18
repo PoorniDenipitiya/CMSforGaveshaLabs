@@ -1,0 +1,281 @@
+
+/* Container for the post details */
+.reso-post-details-container {
+  max-width: 800px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+}
+
+/* Styling for the post title */
+.reso-post-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Wrapper for the post title and edit/delete icons */
+.reso-post-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Wrapper for the edit and delete icons */
+.reso-edit-delete-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the edit and delete icons */
+.reso-edit-icon,
+.reso-delete-icon {
+  font-size: 18px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Styling for the post information (author and date) */
+.reso-post-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+/* Styling for the post information text */
+.reso-post-info p {
+  font-size: 14px;
+  color: #4f4f4f; /* Use a color similar to ash */
+}
+
+/* Styling for the post image */
+.reso-post-image {
+  width: 95%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(187, 129, 156);
+}
+
+/* Styling for the post content */
+.reso-post-content {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 100%;
+  text-align: justify;
+  white-space: pre-line;
+}
+
+/* Styling for the post categories */
+.reso-post-categories {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+/* Styling for the categories label */
+.reso-post-categories p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Styling for individual categories */
+.reso-post-categories div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Align items horizontally */
+  margin-left: 5px;
+}
+
+/* Styling for each category item */
+.reso-post-categories div div {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+/* Styling for the comments section */
+.reso-comments-section {
+  margin-bottom: 20px;
+}
+
+/* Styling for each comment */
+.reso-comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 7px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.reso-comment p{
+  margin-left: 4px;
+}
+
+/* Styling for the comment header */
+.reso-comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #4b5563;
+}
+
+/* Styling for the comment user */
+.resocomuser {
+  margin-right: 13px;
+  font-size: 12px;
+  display: flex;
+}
+
+.resocomuser .authorProfilePicture{
+  width: 21px;
+  height: 21px;
+}
+
+.resocomuser .user{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.resocomuser .time{
+  margin-top: 10px;
+  margin-left: 17px;
+}
+
+/* Styling for the comment actions */
+.reso-comment-actions {
+  display: flex;
+  cursor: pointer;
+}
+
+.reso-comment-actions .reply{
+  background-color: white; 
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.reso-comment-actions .reply img{
+   width: 18px;
+   height: 18px;
+}
+.comreplyshow .showreply{
+  background-color: white; 
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: purple;
+  margin-left: 660px;
+  margin-top: 0.5px;
+}
+
+/* Styling for the write comment section */
+.reso-write-comment {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the comment input field */
+.resocomsection {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Styling for the comment button */
+.reso-write-comment button {
+  padding: 10px 20px;
+  background-color: purple;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover styling for the comment button */
+.reso-write-comment button:hover {
+  background-color: rgb(78, 1, 78);
+}
+
+/* Container for the star rating */
+.resoStarRating {
+display: flex;
+align-items: center;
+}
+
+/* Remove margin and padding from labels to reduce space between stars */
+.resoStarRating label {
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+}
+
+/* Styling for the star icon */
+.resoStar {
+cursor: pointer;
+margin: 0 2px; /* Adjust margin to control space between stars */
+}
+
+/* Styling for the radio buttons (hide them) */
+input[type="radio"] {
+display: none;
+}
+
+/* Styling for the star rating text */
+.resoStarRating p {
+font-weight: bold;
+margin-left: 10px; /* Add some space between stars and the rating text */
+margin-top: 5px;
+margin-bottom: 18px;
+}
+
+/* Add nested comments styles */
+.reso-comment-replies {
+margin-left: 20px; /* Indent replies */
+}
+
+.reso-post-info .authorInfo .authorProfilePicture{
+width:25px;
+height: 25px;
+border: #000;
+border-radius: 50%;
+}
+
+.reso-post-info .authorInfo {
+display: flex;
+flex-direction: row;
+}
+
+.reso-post-info .authorInfo p{
+margin-top: 10px;
+margin-left: 6px;
+
+}
+
+.star-rating {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 1rem;
+}
+
+.star-rating .fa-star {
+margin: 0 5px;
+cursor: pointer;
+transition: color 200ms;
+}
+
+.star-rating p {
+margin-left: 10px;
+font-size: 1rem;
+}

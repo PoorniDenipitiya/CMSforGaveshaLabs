@@ -1,0 +1,279 @@
+
+.blogBody {
+  font-size: 20px;
+  text-align:left;
+  padding-left: 120px;
+  width: 90%;
+}
+
+.blogDate {
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.Blog {
+  padding: 100px;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  background-color: #f9f9f9;
+}
+
+.blogTitle {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blogbody {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  white-space: pre-line;
+}
+.postImage {
+  height: 220px;
+  width: auto;
+  justify-content: center;
+  margin: 50px;
+}
+
+.BlogComments {
+  padding: 100px;
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  background-color: #f9f9f9;
+}
+
+.blogCommentTitle {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #532f44;
+}
+.autherDetails {
+  margin-top: 5px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.insideBlogHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 680px;
+}
+.insideBlogAutherName {
+  margin-top: 12px;
+}
+.blogByPhrase {
+  margin-top: 12px;
+}
+.blogCommentTextArea {
+  margin-bottom: 2px;
+  padding: 10px;
+  padding-bottom: 10px;
+  height: inherit;
+  width: 100%;
+}
+.blogCommentTextArea:focus {
+  outline: none;
+}
+
+.insideBlogComment {
+  margin-bottom: 2px;
+  padding: 10px;
+  padding-bottom: 10px;
+  height: inherit;
+
+}
+
+/* .blogCommentButton {
+  width: 30px;
+  border: 1px;
+  border-radius: 10%;
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+.blogCommentButtonIcon{
+  padding-top: 5px;
+} */
+
+.insideBlogLikeContainer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 20px 0; /* Add vertical margin */
+  padding: 10px; /* Add padding for better spacing */
+  background-color: #f0f0f0; /* Optional: background color for emphasis */
+  text-align: center; /* Center text */ 
+}
+
+.insideBlogLike {
+  cursor: pointer;
+  margin: 0 5px;
+  transition: transform 0.2s;
+  width: 20px;
+  cursor: pointer;
+}
+
+.insideBlogLike:hover {
+  transform: scale(1.2);
+}
+
+.insideBlogText {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.blog-comments-section {
+  margin-top: 5px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .blogBody {
+    padding-left: 60px;
+    width: 95%;
+  }
+
+  .blogDate {
+    padding-left: 60px;
+  }
+
+  .Blog {
+    padding: 50px;
+    font-size: 18px;
+  }
+
+  .blogTitle {
+    font-size: 30px;
+  }
+
+  .blogbody {
+    font-size: 18px;
+    width: 85%;
+  }
+
+  .postImage {
+    height: 200px;
+    margin: 40px;
+  }
+
+  .BlogComments {
+    padding: 50px;
+  }
+
+  .insideBlogHeader {
+    gap: 200px;
+  }
+
+  .autherDetails {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blogBody {
+    padding-left: 40px;
+    width: 100%;
+  }
+
+  .blogDate {
+    padding-left: 25px;
+  }
+
+  .Blog {
+    padding: 40px;
+    font-size: 16px;
+  }
+
+  .blogTitle {
+    font-size: 24px;
+  }
+
+  .blogbody {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .postImage {
+    height: 180px;
+    margin: 30px;
+  }
+
+  .BlogComments {
+    padding: 40px;
+  }
+
+  .insideBlogHeader {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .autherDetails {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blogBody {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .blogDate {
+    padding-left: 20px;
+  }
+
+  .Blog {
+    padding: 30px;
+    font-size: 14px;
+  }
+
+  .blogTitle {
+    font-size: 20px;
+  }
+
+  .blogbody {
+    font-size: 14px;
+    width: 95%;
+  }
+
+  .postImage {
+    height: 160px;
+    margin: 20px;
+  }
+
+  .BlogComments {
+    padding: 30px;
+  }
+
+  .insideBlogHeader {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .autherDetails {
+    gap: 5px;
+  }
+}

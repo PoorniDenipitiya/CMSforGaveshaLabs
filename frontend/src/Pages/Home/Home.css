@@ -1,0 +1,324 @@
+/* Home.css */
+.Home {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.HomeMainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  
+  justify-content: space-between;
+}
+
+.homeDiv1 { 
+  flex: 1;
+  margin: 30px;
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: #280137;
+  transition: transform 0.3s;
+}
+
+.homeDiv1:hover {
+  transform: translateY(-10px);
+}
+
+.TriviaAPP {
+  padding: 30px;
+  padding-bottom: 0px;
+  font-size: 45px;
+  font-family: prociano;
+  padding-left: 80px;
+  font-weight: 550;
+}
+
+.HomeMainSubText {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  font-size: 24px;
+  font-family: prociano;
+}
+
+.HomeGetStartedButton {
+  background-color: #280137;
+  color: #fff;
+  border: none;
+  margin-top: 30px;
+  margin-left: 80px;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-family: cursive;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.HomeGetStartedButton:hover {
+  background-color: #3b0152;
+  transform: scale(1.05);
+}
+
+.HomeGetStartedButton:active {
+  background-color: #1e0129;
+  transform: scale(1);
+}
+
+.HomeGetStartedButton:focus {
+  outline: none;
+}
+
+.homeDiv2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+  
+@keyframes slideIn {
+  from { 
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-300%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.homeDiv2 .mainocto {
+  width: 500px; /* Adjust the size as needed */
+  animation: slideIn 3s linear, fadeIn 0.5s ease-in 3s;
+  /* slideIn runs for 3s, fadeIn starts after 3s and runs for 2s */
+}
+
+
+/* .homeDiv2:hover {
+  transform: translateY(-10px);
+} */
+
+.HomeText {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  box-shadow: 0 0 10px gray;
+  border-radius: 5px;
+}
+
+.HomeSearch {
+  height: 30px;
+  width: 300px;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 13px;
+  font-family: cursive;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.HomeSearchIcon {
+  height: 20px;
+  width: 30px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.HomeSearch::placeholder {
+  color: #aaa;
+}
+
+.homeDiv2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.HomeResourseDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.HomeResourseDiv.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.HomeResourceSub1,
+.HomeForumSub2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.resourseImage,
+.blogImage {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.HomeResourceSub2,
+.HomeForumSub1 {
+  flex: 1;
+  padding: 20px;
+}
+
+.ResourcesTopic {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.ForumTopic {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.HomeResourceSubText {
+  font-size: 1.1em;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.HomeForumSubText {
+  font-size: 1.1em;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+#section2,
+#section4,
+#section6 {
+  background-color: #000;
+}
+
+.AboutusDiv {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.AboutusDiv p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .homeDiv1 {
+    padding-left: 40px;
+  }
+
+  .HomeMainSubText {
+    padding-left: 40px;
+    font-size: 20px;
+  }
+
+  .HomeGetStartedButton {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .homeDiv1,
+  .homeDiv2 {
+    margin: 20px;
+    padding: 20px;
+    flex: 1 1 100%;
+  }
+
+  .HomeMainDiv {
+    flex-direction: column;
+  }
+
+  .HomeSearch {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .HomeResourseDiv {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .HomeResourceSub1,
+  .HomeForumSub2,
+  .HomeResourceSub2,
+  .HomeForumSub1 {
+    flex: 1 1 100%;
+    padding: 10px;
+  }
+
+  .resourseImage,
+  .blogImage {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .TriviaAPP {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+
+  .HomeMainSubText {
+    font-size: 18px;
+    padding-left: 20px;
+  }
+
+  .HomeGetStartedButton {
+    padding: 10px 30px;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .HomeSearch {
+    width: 200px;
+  }
+
+  .ResourcesTopic,
+  .ForumTopic {
+    font-size: 1.2em;
+  }
+
+  .HomeResourceSubText,
+  .HomeForumSubText {
+    font-size: 1em;
+  }
+
+  .AboutusDiv p {
+    font-size: 1em;
+  }
+}

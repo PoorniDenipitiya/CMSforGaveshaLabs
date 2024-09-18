@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  
+}
+
+.admin_content{
+  margin-left: 19%;
+  margin-right: 2%;
+  height: 100%; 
+ /*padding: 1px;*/
+  display: grid;
+ gap: 1px;
+}
+
+.admin_griditem1, .admin_griditem3 {
+  font-weight: bold;
+}
+
+.admin_griditem2, .admin_griditem4, .admin_griditem6{
+  height: 100%;
+ /*padding: 1px;*/
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+ gap: 1px;
+}
+
+.admin_griditem6_new {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px;
+  grid-template-areas: 
+    "graph blogs"
+    "graph forum";
+  height: 100%;
+}
+
+/* Assign the grid areas */
+.graph {
+  grid-area: graph;
+  text-align: center;
+  display: flex;               /* Use Flexbox */
+  align-items: center;         /* Center vertically */
+  justify-content: center;     /* Center horizontally */
+}
+
+.blogs {
+  grid-area: blogs;
+  text-align: center;
+  display: flex;               /* Use Flexbox */
+  align-items: center;         /* Center vertically */
+  justify-content: center;     /* Center horizontally */
+}
+
+.forum {
+  grid-area: forum;
+  text-align: center;
+  display: flex;               /* Use Flexbox */
+  align-items: center;         /* Center vertically */
+  justify-content: center;     /* Center horizontally */
+}
+
+.admin_content  {
+  padding: 20px;
+  font-size :20px;
+  color: rgb(0, 0, 0);
+}
+
+.admin_box{
+  background-color:  rgb(207, 186, 226);
+border-radius: 10px;
+padding: 50px;
+margin: 20px;
+color: #000000;
+text-align: center;
+overflow: auto;
+}
+
+.admin_box:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: rgb(207, 186, 226);
+}
+
+.admin_box:active{
+  transform: translateY(4px);
+  background-color: whitesmoke;
+}
+
+.countstyle{
+  font-weight: bolder;
+  font-size:larger;
+  padding-top: 5%;
+  color:purple;
+}

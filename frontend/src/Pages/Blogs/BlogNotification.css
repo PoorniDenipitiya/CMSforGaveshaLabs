@@ -1,0 +1,65 @@
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #323232;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+
+/* Styles for 1200px */
+@media (max-width: 1200px) {
+.notification {
+    padding: 8px 18px; /* Adjust padding */
+    bottom: 15px; /* Adjust position */
+    right: 15px;
+}
+
+.close-btn {
+    font-size: 1.1em; /* Adjust font size */
+}
+}
+
+/* Styles for 678px */
+@media (max-width: 678px) {
+.notification {
+    max-width: 90%; /* Reduce width */
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 16px; /* Further reduce padding */
+}
+
+.close-btn {
+    font-size: 1em; /* Adjust font size */
+}
+}
+
+/* Styles for 480px */
+@media (max-width: 480px) {
+.notification {
+    max-width: 95%; /* Take almost full width */
+    left: 10px; /* Center align */
+    right: 10px;
+    bottom: 10px;
+    padding: 6px 14px; /* Reduce padding more */
+}
+
+.close-btn {
+    font-size: 0.9em; /* Adjust font size */
+}
+}

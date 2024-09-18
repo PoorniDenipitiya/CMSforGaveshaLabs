@@ -1,0 +1,230 @@
+
+
+.mainpostcard{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-left: 240px;
+  margin-right: 0px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  color:#000;
+  font-size: 20px;
+  height: fit-content;
+  width: 300px;
+  cursor: pointer;    
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.postCard{
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s;
+  height:420px;
+}
+
+.mainpostcard:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+.blogPostImage{
+  max-width: 100%;
+  padding: 0px;
+  height: 200px;
+  
+}
+.blogPostdate{
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.authorProfilePicture{
+  width:40px;
+  height: auto;
+  border: #000;
+  border-radius: 50%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.blogCardFooter{
+  display: flex;
+  gap: 30px;
+}
+
+
+.blogPostostDetails {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.postCard:hover .blogPostostDetails {
+  opacity: 1; /* Show post details on hover */
+}
+
+.blogPostostDetails {
+  
+  padding: 20px;
+  text-align: center;
+}
+.blogPostText{
+  
+  color: #000;
+}
+.blogPostTitle{
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  justify-content: center;
+  text-align: left;
+ 
+}
+
+.blogPostDescription{
+  font-size: 16px;
+  text-align: justify;
+
+}
+.blogcard{
+  text-decoration: none;
+  color: inherit;
+}
+.likedislikeDiv{
+  display: flex;
+  color: #532f40;
+  gap: 25px;
+
+}
+
+
+.editButton{
+  width: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+
+/* Responsive styles for 1200px and above */
+@media (min-width: 1200px) {
+  .mainpostcard {
+    margin-left: 20px;
+    width: 340px;
+  }
+
+  .postCard {
+    height: 420px;
+  }
+
+  .blogPostImage {
+    height: 220px;
+  }
+
+  .blogPostTitle {
+    font-size: 20px;
+  }
+
+  .blogPostDescription {
+    font-size: 18px;
+  }
+}
+
+/* Responsive styles for 768px to 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mainpostcard {
+    margin-left: 10px;
+    width: 320px;
+  }
+
+  .postCard {
+    height: 400px;
+  }
+
+  .blogPostImage {
+    height: 210px;
+  }
+
+  .blogPostTitle {
+    font-size: 19px;
+  }
+
+  .blogPostDescription {
+    font-size: 17px;
+  }
+}
+
+/* Responsive styles for 480px to 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+  .mainpostcard {
+    margin-left: 5px;
+    width: 100%;
+  }
+
+  .postCard {
+    height: 380px;
+  }
+
+  .blogPostImage {
+    height: 200px;
+  }
+
+  .blogPostTitle {
+    font-size: 18px;
+  }
+
+  .blogPostDescription {
+    font-size: 16px;
+  }
+}
+
+/* Responsive styles for below 480px */
+@media (max-width: 479px) {
+  .mainpostcard {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .postCard {
+    height: auto;
+  }
+
+  .blogPostImage {
+    height: auto;
+    width: 100%;
+  }
+
+  .blogPostTitle {
+    font-size: 16px;
+  }
+
+  .blogPostDescription {
+    font-size: 14px;
+  }
+
+  .blogCardFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .authorProfilePicture {
+    width: 30px;
+  }
+
+  .editButton {
+    width: 25px;
+  }
+}

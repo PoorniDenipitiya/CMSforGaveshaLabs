@@ -1,0 +1,186 @@
+
+
+.admin_container{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+
+.admin_sidebar-container{
+  position:absolute;
+  left: 0;
+  width: 18%;
+  height:170vh;
+  background-color: black;
+  position: fixed; /* Fix it to the side */
+  top:70px;
+  left: 0;
+  overflow: auto; /* Add scroll if content overflows */
+
+  
+}
+.admin_line_grid{
+/*  font-size: 22px;
+  background-color: black;
+  color: white;
+  line-height: 70px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;*/
+  font-size: 22px;
+  background-color: black;
+  color: white;
+  line-height: 70px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+ z-index: 1000;
+
+}
+
+.admin_nav_grid{
+  gap:10px;
+  grid-auto-flow: column; /*in a row*/
+justify-content: flex-end; /*right align*/
+display: grid;
+margin-top: 10px;
+margin-left: auto;
+font-size: xx-large;
+}
+
+.admin_nav_grid a{
+  margin-right: 20px;
+ color:white;
+
+}
+
+.admin_nav_grid a:hover{
+  color: rgb(165, 124, 200);
+}
+
+.admin_nav-option li a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+ color: white;
+  padding-left: 40px;
+  /*box-sizing: border-box;*/
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  transition: .4s;
+ 
+}
+
+.admin_nav-option li:hover a{
+  padding-left: 50px;
+  color:rgb(165, 124, 200);
+}
+.admin_nav-option li:active{
+  color: blueviolet;
+}
+
+.admin_nav-option li.active a {
+padding-left: 50px;
+color: rgb(165, 124, 200);
+}
+
+.admin_content{
+  margin-left: 19%;
+  margin-right: 2%;
+  height: 100%; 
+ /*padding: 1px;*/
+  display: grid;
+ gap: 1px;
+}
+
+.admin_notification-icon {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.admin_notification-icon a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.admin_notification-count {
+  position: absolute;
+  top: -7px;
+  right: -12px;
+  background-color: rgb(246, 19, 19);
+  color: white;
+  border-radius: 50%;
+  padding: 4px 6px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.admin_tooltip {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the icon */
+  left: 50%;
+  margin-left: -100px; /* Use half of the width to center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.admin_tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.admin_notification-icon:hover .admin_tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.admin_notification-box {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 350px;
+  background: white;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  color: black;
+  font-size: medium;
+  border-radius: 20px;
+
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.admin_notification-icon:hover .admin_notification-box {
+  display: block;
+}
+
+.admin_nav{
+  justify-content: space-between;
+}
+
+.admin-list li{
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 30px;
+}

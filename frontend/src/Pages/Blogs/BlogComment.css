@@ -1,0 +1,182 @@
+
+/* BlogComment.css */
+
+.blog-comment {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 14px; /* Smaller font size */
+}
+
+.comment-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comment-user {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Gap between profile picture, username, and date */
+}
+
+.authorProfilePicture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.comment-user h5 {
+  margin: 0;
+  font-size: 16px; /* Adjust font size if needed */
+  font-weight: 600;
+}
+
+.comment-user h6 {
+  margin: 0;
+  font-size: 12px; /* Smaller date font size */
+  font-weight: 400;
+  color: #888; /* Lighter color for date */
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-actions button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.comment-actions button:hover {
+  text-decoration: underline;
+}
+
+.comment-actions svg {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.comment-actions svg:hover {
+  color: #cc0000;
+}
+
+.write-reply {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.reply-input {
+  flex: 1;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.write-reply button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.write-reply button:hover {
+  background-color: #0056b3;
+}
+
+.write-reply button:nth-child(3) {
+  background-color: #888; /* Cancel button background color */
+}
+
+.write-reply button:nth-child(3):hover {
+  background-color: #555; /* Cancel button hover color */
+}
+
+.comment-replies {
+  margin-top: 10px;
+  padding-left: 20px;
+  border-left: 2px solid #eee;
+}
+
+/* Media queries for 1200px */
+@media (max-width: 1200px) {
+  .comment-user h5 {
+    font-size: 15px;
+  }
+
+  .comment-user h6 {
+    font-size: 11px;
+  }
+
+  .authorProfilePicture {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Media queries for 678px */
+@media (max-width: 678px) {
+  .comment-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .comment-user {
+    margin-bottom: 5px;
+  }
+
+  .comment-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .comment-actions button {
+    font-size: 12px;
+  }
+}
+
+/* Media queries for 480px */
+@media (max-width: 480px) {
+  .comment-user h5 {
+    font-size: 14px;
+  }
+
+  .comment-user h6 {
+    font-size: 10px;
+  }
+
+  .authorProfilePicture {
+    width: 30px;
+    height: 30px;
+  }
+
+  .reply-input {
+    font-size: 12px;
+  }
+
+  .write-reply button {
+    font-size: 12px;
+  }
+
+  .comment-actions button {
+    font-size: 12px;
+  }
+
+  .comment-actions svg {
+    font-size: 18px;
+  }
+}

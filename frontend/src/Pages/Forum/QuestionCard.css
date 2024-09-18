@@ -1,0 +1,163 @@
+.cardBox {
+    width: 100%;
+    max-width: 900px;
+    margin-left:100px;
+    padding: 20px;
+    border: 1px solid #747171;
+    border-radius: 25px;
+    box-shadow: 0 0 9px #747171;
+    transition: padding 0.3s ease, font-size 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .cardTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #101318;
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: flex-direction 0.3s ease, align-items 0.3s ease;
+  }
+  
+  .profilepic {
+    display: flex;
+    align-items: center;
+  }
+  
+  .authorProfilePicture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  
+  .authorUsername {
+    font-size: 14px;
+    font-weight: 400;
+    transition: font-size 0.3s ease;
+  }
+  
+  .postedtime {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7E8597;
+    margin-left: 15px;
+    transition: margin-left 0.3s ease, margin-top 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #5C677D;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: font-size 0.3s ease, height 0.3s ease;
+    border: none !important;
+  }
+  
+  .info {
+    display: flex;
+    gap: 10px;
+    transition: flex-direction 0.3s ease, align-items 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .cardBox {
+      padding: 15px;
+    }
+  
+    .cardTitle {
+      font-size: 18px;
+    }
+  
+    .profile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .postedtime {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  
+    .description {
+      font-size: 14px;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cardBox {
+      padding: 10px;
+    }
+  
+    .cardTitle {
+      font-size: 16px;
+    }
+  
+    .profile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .authorProfilePicture {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .authorUsername {
+      font-size: 12px;
+    }
+  
+    .postedtime {
+      font-size: 12px;
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  
+    .description {
+      font-size: 14px;
+      height: auto;
+    }
+  
+    .info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .cardBox {
+      padding: 5px;
+    }
+  
+    .cardTitle {
+      font-size: 14px;
+    }
+  
+    .authorProfilePicture {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .authorUsername {
+      font-size: 10px;
+    }
+  
+    .postedtime {
+      font-size: 10px;
+    }
+  
+    .description {
+      font-size: 12px;
+    }
+  }
+  

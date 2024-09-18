@@ -1,0 +1,164 @@
+.rescollect {
+  position: relative; /* Add position relative */
+  margin: 0 auto;
+  width: 70%;
+  min-height: 250px; /* Change height to auto to accommodate variable content */
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: space-between;
+  margin: 3rem auto;
+  box-shadow: 0 8px 16px rgba(195, 50, 251, 0.5);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.rescollect.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.resoimg {
+  width: 220px;
+  height: 210px;
+  float: left;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.resopara {
+  margin-top: 30px;
+  margin-right: 30px;
+  color: black;
+  line-height: 21px;
+  text-align: justify;
+}
+
+.seemore {
+  position: absolute; /* Position the entire seemore div */
+  bottom: 20px; /* Adjust bottom spacing */
+  right: 45px; /* Adjust right spacing */
+}
+
+.seemore button {
+  outline: none;
+  width: 80px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.resobanner {
+  background-image: url("Assets/ResoBanner5.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 470px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resobanner-content {
+  text-align: center;
+  color: white ;
+  margin-top: 50px; /* Adjust the margin to move the content down */
+  background-color: rgba(15, 15, 15, 0.699); /* Transparent black background */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.resobanner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.resobanner-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: white ;
+}
+
+.button-icon {
+  width: 20px; /* Icon width */
+  height: 20px; /* Icon height */
+  margin-right: 5px; /* Right margin */
+
+}
+
+.resobanner-content button {
+  padding: 8px 15px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: white; /* Adjust color as needed */
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.resobanner-content button:hover {
+  border: 2px solid rgb(182, 182, 182);
+  background-color: #bec5cc; /* Adjust color as needed */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .rescollect {
+    width: 90%; /* Adjust width for smaller screens */
+    height: auto;
+  }
+
+  .resoimg {
+    width: 100%; /* Make images fluid */
+    height: auto; /* Ensure aspect ratio is maintained */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    float: none; /* Remove float */
+  }
+
+  .seemore {
+    position: relative; /* Reset position */
+    bottom: auto; /* Reset bottom */
+    right: auto; /* Reset right */
+    margin-left: auto; /* Center the seemore div */
+    margin-right: auto; /* Center the seemore div */
+    text-align: right; /* Center button */
+  }
+
+  .seemore button {
+    margin: auto;
+  }
+}
+
+.ResoSearchDiv {
+  position: relative; /* Positioning context for the search icon */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Center the search bar */
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-radius: 7px;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 10px;
+  margin-top: 16px;
+  transform: translateY(-50%); /* Center the icon vertically */
+  cursor: pointer;
+  width: 25px; /* Adjust the size of the icon */
+  height: 25px; /* Adjust the size of the icon */
+}
+

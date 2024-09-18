@@ -1,0 +1,46 @@
+.forumTable {
+    box-shadow: 0 0 20px gray;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto; /* Center the form horizontally */
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    max-width: 800px; /* Limit maximum width for larger screens */
+}
+
+.formsubmitbutton {
+    margin-left: auto;
+    margin-right: auto; /* Center the button horizontally */
+    width: 100%;
+    max-width: 300px; /* Limit maximum width for larger screens */
+    height: 45px;
+    font-size: large;
+    font-weight: 600;
+    border: 1px solid rgb(41, 11, 81);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(199, 200, 231);
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(35, 23, 168);
+}
+
+.formsubmitbutton:hover {
+    background-color: rgba(45, 64, 96, 0.415);
+}
+
+.forumTable input,
+.forumTable textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    background-color: rgba(128, 128, 128, 0.379);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px gray;
+}
+
+.questionForm h1 {
+    text-align: center;
+    margin-top: 25px;
+}

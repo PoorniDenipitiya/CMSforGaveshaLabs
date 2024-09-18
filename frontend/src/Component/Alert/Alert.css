@@ -1,0 +1,52 @@
+ 
+
+.alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
+    z-index: 1000; 
+    width: 480px;
+    height: 240px;
+  }
+  
+  .alert-up{
+    background-color: rgb(67, 6, 82);
+    height: 15px;
+  }
+  
+  .alert-box .close-btn {
+    border-radius: 5px !important;
+    background: rgb(167, 154, 154);
+    box-shadow: 0 0 5px rgb(45, 44, 44);
+    border:none ;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+  }
+  
+  /*.alert-box{
+    margin-top: 10px;
+    color: purple;
+  }*/
+  .alert-box p {
+   margin-top: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+    flex: 1;
+    margin-left: 15px;
+    color: black !important;
+  }
+  

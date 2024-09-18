@@ -1,0 +1,113 @@
+.share-popup {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.share-popup-content {
+  display: flex; /* Use flexbox to arrange buttons in a row */
+  justify-content: space-between; /* Distribute items evenly along the row */
+}
+
+.share-popup-content button {
+  margin-right: 10px; /* Add spacing between buttons */
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Center icon and text vertically */
+}
+
+.share-popup-content button:hover {
+  background-color: #f0f0f0; /* Light background color on hover */
+}
+
+.close-button {
+  align-self: flex-end; /* Align close button to the end of the row */
+  margin-top: 10px; /* Add some margin above close button */
+}
+
+.ShareBoxIcon{
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+.share-popup {
+  padding: 15px;
+}
+
+.share-popup-content {
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+}
+
+.share-popup-content button {
+  margin-right: 0; /* Remove right margin */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+.close-button {
+  align-self: center; /* Center the close button horizontally */
+  margin-top: 15px;
+}
+}
+
+@media (max-width: 768px) {
+.share-popup {
+  width: 80%; /* Adjust width for smaller screens */
+  padding: 15px;
+}
+
+.share-popup-content {
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+}
+
+.share-popup-content button {
+  margin-right: 0; /* Remove right margin */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+.close-button {
+  align-self: center; /* Center the close button horizontally */
+  margin-top: 15px;
+}
+}
+
+@media (max-width: 480px) {
+.share-popup {
+  width: 90%; /* Adjust width for smaller screens */
+  padding: 10px;
+}
+
+.share-popup-content {
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+}
+
+.share-popup-content button {
+  margin-right: 0; /* Remove right margin */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+  padding: 8px; /* Adjust padding for smaller screens */
+}
+
+.close-button {
+  align-self: center; /* Center the close button horizontally */
+  margin-top: 10px;
+}
+
+.ShareBoxIcon {
+  width: 20px; /* Adjust icon size for smaller screens */
+  height: 20px;
+}
+}

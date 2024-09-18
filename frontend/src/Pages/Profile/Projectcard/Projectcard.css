@@ -1,0 +1,128 @@
+.project_inline_cards {
+  margin: 10px;
+}
+
+.project_card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 14px;
+  background-color: rgb(235, 200, 235);
+  width:350px;
+  
+}
+
+.project_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project_card_image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  transition: transform 0.5s;
+  position: inherit;
+}
+
+.project_card:hover {
+  transform: scale(1);
+}
+
+.project_container {
+  /* padding: 20px 16px; */
+}
+
+.project_container_text{
+  
+  height: 150px;
+}
+.project_card_title {
+  font-weight: bold;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 5px;
+}
+
+.project_description {
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 5px;
+  
+ 
+}
+
+.project_card__btn {
+  padding: 5px;
+  background-color: blueviolet;
+  color: white;
+  align-items: left;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 5px;
+  margin-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.project_card__btn:hover {
+  background-color: rgb(104, 19, 183);
+}
+
+.project_card__btn:active {
+  transform: translateY(4px);
+  background-color: rgb(104, 19, 183);
+}
+
+.project_last_line{
+  display:inline-flex;
+  margin-bottom: 150px;
+
+}
+
+.project_details, .project_published_details {
+  line-height: 0px;
+  text-align: right;
+ 
+  color: rgb(104, 103, 103);
+  font-size: smaller;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.project_published_details p{
+  margin-top: 0;
+}
+.project_details{
+ text-align: right;
+ margin-left: 70px;
+ position: absolute;
+ 
+}
+
+.project_heart {
+  cursor: pointer;
+  
+ /* align-items: center;*/
+ margin-top: -20px;
+  /*font-size: 20px;*/
+  list-style: none;
+  margin-left: 0;
+  position: absolute;
+  margin-bottom: 25px;
+  text-align: left;
+  
+
+  /*background-color: rgb(208, 179, 204);
+  padding-top: 0px;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;*/
+}
+
+.project_heart_line{
+ 
+  font-size: 15px;
+
+ 
+}

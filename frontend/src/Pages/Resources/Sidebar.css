@@ -1,0 +1,33 @@
+.sidebar {
+    width: 250px;
+    height: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+.restable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    border-collapse: separate; 
+    border-spacing: 0 5px;
+  }
+  
+ .restable  td {
+    border: 1px solid #555;
+    padding: 15px;
+    width: 20%;
+  }
+  
+ 
+ .restable tr:hover{
+    background-color: #555;
+    cursor: pointer;
+  }
+ .restable .nav{
+    text-decoration: none;
+    color: inherit;
+  }

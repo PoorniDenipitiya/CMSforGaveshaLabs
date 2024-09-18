@@ -1,0 +1,40 @@
+.MainErrorDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light grey background */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .subErrorDiv {
+    margin: 10px;
+  }
+  
+  .subErrorDiv img {
+    width: 500px;
+    height: fit-content;
+  }
+  
+  .subErrorDiv h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .subErrorDiv p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .subErrorDiv a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .subErrorDiv a:hover {
+    text-decoration: underline;
+  }
+  

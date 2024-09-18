@@ -1,0 +1,34 @@
+.admin_content {
+  /*  border-collapse: collapse;
+    width: 100%;*/
+    margin-left: 19%;
+    margin-right: 2%;
+    height: 100%;
+    display: grid;
+    gap: 1px;
+   /* background-color: rgb(192, 159, 196);*/
+  padding: 10px;
+  font-size: medium;
+  }
+  
+  .admin_tr {
+ 
+    background-color: rgb(231, 189, 237);
+  }
+  .admin_th, .admin_td {
+    padding: 10px;
+  border: 1px solid #dee2e6;
+  
+  }
+  
+
+
+  .admin_th {
+    background-color: #e9ecef;
+  }
+  .admin_td {
+    text-align: center;
+  }
+  .admin_tr:hover {
+    background-color: #f2f2f2;
+  }

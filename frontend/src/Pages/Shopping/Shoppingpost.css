@@ -1,0 +1,252 @@
+/* General Styles */
+.shoppingform {
+  border: 1px solid #201010;
+  box-shadow: 0 0 10px #4105416e;
+  width: 40%;
+  margin-left: 50px;
+  height: max-content;
+  margin-bottom: 50px;
+}
+
+.shoptable {
+  padding: 25px;
+}
+
+.adpost h1 {
+  text-align: center;
+  padding: 25px;
+}
+
+.shoptable th {
+  text-align: left;
+  padding-right: 63px;
+  font-size: 19px;
+}
+
+.shoptable input {
+  width: 399px;
+  height: 50px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: 1px solid purple;
+  padding-left: 15px;
+}
+
+.shoppingform textarea {
+  border: 1px solid purple;
+  border-radius: 15px;
+  margin-top: 7px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.shopbutton {
+  margin-left: 150px;
+  width: 250px;
+  height: 45px;
+  font-size: large;
+  font-weight: 600;
+  border: 1px solid purple;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.shopbutton:hover {
+  background-color: purple;
+  color: white;
+}
+
+.restrict p {
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  margin-left: 25px;
+  color: rgb(219, 7, 28);
+  font-weight: 600;
+}
+
+.restrict input {
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.shopbody {
+  display: flex;
+}
+
+.shoptable2 {
+  padding: 25px;
+  border: 1px solid #201010;
+  box-shadow: 0 0 10px #4105416e;
+  margin-left: 70px;
+  height: fit-content;
+  width: 50%;
+}
+
+.shoptable2 h3 {
+  text-align: center;
+  font-size: x-large;
+}
+
+.comname {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.comprice {
+  font-size: 32px;
+  margin-left: 20px;
+  color: #ad0dadf3;
+}
+
+.shopphoto {
+  text-align: left;
+}
+
+.shoptext {
+  padding-left: 125px;
+  padding-bottom: 150px;
+}
+
+.shoppostup, .shoppostdown {
+  display: block;
+}
+
+.shoptable2 td img {
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
+
+/* Product Description Styles */
+.pdescrip {
+  border: 1px solid gray;
+  box-shadow: 0 0 10px rgba(66, 9, 113, 0.915);
+  width: 50%;
+  height: max-content;
+  margin-left: 350px;
+  margin-top: 50px;
+  padding-top: 15px;
+  margin-bottom: 50px;
+}
+
+.desccomname {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.desccomprice {
+  font-size: 32px;
+  margin-left: 20px;
+  color: #ad0dadf3;
+}
+
+.descphoto {
+  text-align: left;
+}
+
+.desctext {
+  padding-left: 125px;
+}
+
+.descup, .descdown {
+  display: block;
+  padding: 15px;
+}
+
+.pdescrip td img {
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .shoppingform {
+    width: 60%;
+    margin-left: 20px;
+  }
+
+  .shoptable2 {
+    width: 70%;
+    margin-left: 30px;
+  }
+
+  .pdescrip {
+    width: 70%;
+    margin-left: 50px;
+  }
+
+  .shoptext, .desctext {
+    padding-left: 75px;
+  }
+
+  .shoptable input, .shoppingform textarea {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .shoppingform, .shoptable2, .pdescrip {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  .shoptable input, .shoppingform textarea {
+    width: 250px;
+  }
+
+  .shopbutton {
+    margin-left: 0;
+    width: 200px;
+  }
+
+  .shopbody {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shoptext, .desctext {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .shoppingform, .shoptable2, .pdescrip {
+    width: 100%;
+    margin-left: 0;
+    box-shadow: none;
+  }
+
+  .shopbutton {
+    width: 150px;
+    height: 40px;
+    font-size: medium;
+  }
+
+  .shoptable input, .shoppingform textarea {
+    width: 200px;
+    height: 40px;
+  }
+
+  .shoptable th {
+    padding-right: 10px;
+    font-size: 16px;
+  }
+
+  .shoptext, .desctext {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .shoptable2 td img, .pdescrip td img {
+    width: 100%;
+    height: auto;
+  }
+}

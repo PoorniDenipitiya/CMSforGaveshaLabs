@@ -1,0 +1,104 @@
+.project_container {
+  border-radius: 14px;
+  margin: 20px 50px;
+  background-color: rgb(235, 200, 235);
+  border: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.project_form {
+  border-radius: 14px;
+  margin: 10px 50px;
+  border-color: rgb(234, 233, 233);
+  border: none;
+  display: block;
+}
+
+.project_topic {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.project_frame_box_center {
+  border-radius: 14px;
+  margin: 20px ;
+  border-color: rgb(234, 233, 233);
+  background-color: rgb(246, 224, 246);
+  width: 100%;
+  margin-left: 0px;
+  padding: 20px 50px;
+}
+
+.project_fill {
+  padding: 20px ;
+}
+
+.project_field,
+.project_upload {
+  margin: 10px;
+  font-size: large;
+  display: flex;
+}
+
+.project_label {
+  padding-right: 10px;
+  padding-bottom: 15px;
+  position: relative;
+  vertical-align: top;
+  width: 40%;
+  text-align: left;
+}
+
+.project_input{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+.project_form_submit {
+  left: 50%;
+ /* transform: translateX(50%);*/
+  position: relative;
+  padding: 5px;
+  background-color: blueviolet;
+  color: white;
+  align-items: left;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.project_form_submit:hover {
+  background-color: rgb(104, 19, 183);
+}
+
+.project_form_submit:active {
+  transform: translateY(4px);
+  background-color: rgb(104, 19, 183);
+}
+
+.project_percentage {
+  color: grey;
+}
+
+.project_ui_message_error {
+  font-weight: bold;
+  color: red;
+}
+
+.project_error {
+  color: red;
+}
+
+.project_field label::after,
+.project_upload label::after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}

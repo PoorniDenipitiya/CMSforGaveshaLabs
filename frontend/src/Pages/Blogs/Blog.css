@@ -1,0 +1,589 @@
+
+/** -----------------------------banner-------------------------------*/
+.blogBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("images/banner1.jpg");
+  background-size: cover;
+  padding-top: 20px;
+  padding-left: 40px;
+  width: 100%;
+  height: 250px;
+  font-size: 20px;
+  font-family: 'https://fonts.googleapis.com/css?family=PT Sans';
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bannerSection {
+  width: 50%;
+}
+
+.bannerSection .quote {
+  color: #ffffff;
+  text-align: center;
+}
+
+.Bannercreate {
+  margin-top: 0px;
+  margin-left: 120px;
+  
+}
+
+.Bannercreate .createLink {
+  text-decoration: none;
+  color: #000000; 
+  border: solid #000000;
+  padding: 5px 80px;
+  border-radius: 10px;
+  box-shadow: inset;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blogQuote{
+  color:#000;
+}
+
+.bannerSection img {
+  width: 50%; 
+  margin-left: 30%;
+  box-shadow: none;
+}
+
+.BlogSearchDiv {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-right: 20px;
+  margin-bottom: 100px;
+}
+
+.BlogSearchBox {
+  height: 30px;
+  width: 270px;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 2px #000;
+  color: #ece7e7;
+  font-size: 13px;
+  font-family: cursive;
+  padding-left: 20px;
+  margin: 0;
+  outline: none;
+}
+
+.BlogSearchIcon {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border-bottom: solid 2px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.BlogSearchBox::placeholder {
+  color: #ece7e7;
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  row-gap: 50px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  list-style: none;
+  height: 31.5px;
+  width: 31.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+
+
+.page-item {
+  list-style: none;
+  padding: 2px 12px;
+  height: 31.5px;
+  width: 31.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+}
+
+
+/**----------------banner ends -------------------------------------------*/
+.blogFilters {
+  display: flex;
+  justify-content: 20px; 
+  margin-left: 120px;
+  gap: 10px;
+}
+
+.filterButton {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #532f44;
+  border: solid #532f44 ;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px;
+}
+.activeFilterButton {
+  background-color: #532f44;
+  color:#fff;
+}
+
+.filterButton:hover{
+  background-color: #532f44;
+  color:#fff;
+}
+
+  .create{ 
+    height: 40px;
+    width: 150px;
+    margin-left: 1100px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+  
+    
+  }
+  .createLink{
+    color: rgb(0, 0, 0);
+    background-color: #dddddd;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-color: #000;
+    font-family: 'https://fonts.googleapis.com/css?family=PT Sans';
+    transition: background-color 0.3s, transform 0.3s;
+  
+  }
+  .createLink:hover{
+    transform: scale(1.05);
+  }
+ 
+
+  .pagination {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    text-align:center;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+   
+  }
+  
+  .page-link {
+    color: #532f44; /* Text color */
+    background-color: #d3d3d3; /* Background color */
+    border: 1px solid #532f44; /* Border color */
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page-link:hover {
+    color: #fff; /* Text color on hover */
+    background-color: #532f44; /* Background color on hover */
+  }
+  
+
+  .PopularBlogsTopic{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #000;
+
+ }
+ .bpost{
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'https://fonts.googleapis.com/css?family=PT Sans';
+  height:fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 380px 380px 380px;
+  column-gap: 25px;
+}
+
+  /* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .blogBanner {
+    padding-left: 30px;
+    height: 220px;
+  }
+
+  .Bannercreate {
+    margin-left: 90px;
+  }
+
+  .bpost {
+    margin-left: 80px;
+    grid-template-columns: repeat(2, 350px);
+  }
+  .blogFilters {
+    margin-left: 60px; /* Adjust margin for smaller screens */
+    gap: 8px; /* Adjust gap for smaller screens */
+  }
+
+  .filterButton {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    margin: 16px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 678px) {
+  .blogBanner {
+    padding-left: 20px;
+    height: 330px;
+  }
+
+  .Bannercreate {
+    margin-left: 60px;
+  }
+
+  .bpost {
+    margin-left: 50px;
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .pagination {
+    margin-left: 0;
+  }
+
+  .blogFilters {
+    flex-direction: column; /* Stack buttons vertically */
+    margin-left: 40px; /* Further adjust margin for smaller screens */
+  }
+
+  .filterButton {
+    padding: 6px 12px; /* Further adjust padding for smaller screens */
+    margin: 10px 0; /* Further adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .blogBanner {
+    padding-left: 10px;
+    height: 350px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bannerSection {
+    width: 100%;
+  }
+
+  .Bannercreate {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .bpost {
+    margin-left: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .pagination {
+    margin-left: 0;
+  }
+
+  .pagination-link {
+    padding: 5px 8px;
+  }
+
+  .blogFilters {
+    flex-direction: column; /* Stack buttons vertically */
+    margin-left: 20px; /* Further adjust margin for smaller screens */
+    gap: 6px; /* Further adjust gap for smaller screens */
+  }
+
+  .filterButton {
+    padding: 4px 8px; /* Further adjust padding for smaller screens */
+    margin: 8px 0; /* Further adjust margin for smaller screens */
+  }
+}
+
+/**--------------create blog posts -------------------------**/
+  .createBlog{
+    height: auto;
+    width: 100vw;
+    color: #000;
+    padding:50px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+   /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpBbG7xVvoxhL7ZYNX36DHYw63z-aMAkKK_z4D09rC0SLK56Q3NJ5COTgeH09HILyaUw4&usqp=CAU);
+   */ background-size: cover;
+
+}
+
+.createBlogDiv{
+    height: auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CreateBlogInnerdiv{
+  width: 900px;
+    margin-left: 10px;
+    background-color: #948f8f;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-radius: 20px;
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.createBlogSubmit{
+    height: 40px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: solid 2px #532f40;
+    font-size: 20px;
+    font-family: cursive;
+    color: #532f40;
+    cursor: pointer;
+
+}
+
+
+.createBlogSubmit:hover{
+    background-color: #532f40;
+    color: #000;
+}
+.WriteBlog{
+  border: 1px solid #532f40;
+  border-radius: 20px;
+  height: fit-content;
+  width: 900px;
+  margin-top: 25px;
+  margin-left: 235px;
+  margin-bottom: 25px;
+  padding-top: 20px;
+
+}
+
+.createBlogForm{
+  padding: 25px;  
+  margin-bottom: 10px; 
+  padding : 25px;
+
+}
+
+.createBlogTitle{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'https://fonts.googleapis.com/css?family=PT Sans';
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.createBlogTextbox{
+  padding: 5px;
+  height: auto;
+  width: 800px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 0.5px solid ;
+  font-size: 15px;
+}
+.createBlogTextbox:hover{
+  border: #532f44 solid 2px;
+}
+
+.createBlogEnterImage{
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  
+}
+.createBlogTextArea{
+  padding: 5px;
+  height: auto;
+  width: 800px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.confirmDialog{
+  border: 2px #000;
+  padding: 10px 20px;
+}
+
+.confirmDialogText{
+  color: #000;
+  font-size: 18px;
+}
+
+.confirmButton{
+  border: 2px #220ed8;
+  background-color:#220ed8 ;
+  color:#fff ;
+  padding:5px 15px;
+  font-size: 15px;
+  margin-right: 25px;
+  border-radius: 5px;
+}
+
+.cancelButton{
+  margin-top: 10px;
+  border: 2px #d80e0e;
+  background-color:#d80e0e ;
+  color:#fff;
+  padding:5px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+/* --------------pagination ----------------------------- */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+  margin-left: 600px;
+  margin-bottom: 20px;
+  gap: 20px;
+  
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination-link {
+  padding: 5px 10px;
+  border: 1px solid #7d6888;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination-link:hover {
+  background-color: #f0f0f0;
+}
+
+.active .pagination-link {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .blogBanner {
+    padding-left: 30px;
+    height: 220px;
+  }
+
+  .Bannercreate {
+    margin-left: 90px;
+  }
+
+  .WriteBlog {
+    width: 700px;
+    margin-left: 150px;
+  }
+
+  .createBlogTextbox,
+  .createBlogTextArea {
+    width: 600px;
+  }
+
+  .createBlogEnterImage {
+    width: 600px;
+  }
+
+  .createBlogSubmit {
+    width: 200px;
+  }
+}
+
+@media (max-width: 678px) {
+  .blogBanner {
+    padding-left: 20px;
+    height: 330px;
+  }
+
+  .Bannercreate {
+    margin-left: 60px;
+  }
+
+  .WriteBlog {
+    width: 500px;
+    margin-left: 100px;
+  }
+
+  .createBlogTextbox,
+  .createBlogTextArea {
+    width: 400px;
+  }
+
+  .createBlogEnterImage {
+    width: 400px;
+  }
+
+  .createBlogSubmit {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blogBanner {
+    padding-left: 10px;
+    height: 350px;
+  }
+
+  .Bannercreate {
+    margin-left: 0;
+  }
+
+  .WriteBlog {
+    width: 300px;
+    margin-left: 50px;
+  }
+
+  .createBlogTextbox,
+  .createBlogTextArea {
+    width: 250px;
+  }
+
+  .createBlogEnterImage {
+    width: 250px;
+  }
+
+  .createBlogSubmit {
+    width: 140px;
+  }
+}

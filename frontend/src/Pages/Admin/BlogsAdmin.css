@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+    
+}
+
+.admin_content {
+  margin-left: 19%;
+  margin-right: 2%;
+  height: 100%;
+  display: grid;
+  gap: 1px;
+  padding: 20px;
+}
+
+.blogTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(231, 189, 237);
+}
+
+.blogTable th,
+.blogTable td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+  
+.blogTable th {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+.blogTable tr:hover {
+  background-color: #f2f2f2;
+}
+
+.seeMoreButton {
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(95, 95, 228);
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}

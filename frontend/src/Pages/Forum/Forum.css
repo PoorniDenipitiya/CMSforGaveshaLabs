@@ -1,0 +1,373 @@
+/* General Styles */
+.forumButton {
+  text-align: right;
+  margin-right: 6em;
+}
+
+.forumButton button {
+  width: 200px;
+  height: 50px;
+  font-size: large;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 2px solid rgb(29, 2, 66);
+  cursor: pointer;
+  margin-top: 100px;
+  background-color: rgb(32, 21, 62);
+  margin-left: 150px;
+  color: white;
+  box-shadow: 0 0 10px wheat;
+}
+
+
+.upperbody {
+  background-image: url("./Assets/f3.jpg");
+  height: 470px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.forumtext {
+  width: 800px;
+  height: 180px;
+  background-color: rgba(6, 6, 53, 0.778);
+  border-radius: 10px;
+  margin-left: 200px;
+  margin-top: 125px;
+  color: rgb(255, 255, 255);
+  font-size: 42px;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 60px;
+  box-shadow: 0 0 10px wheat;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination .b2, .pagination .b1 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* ViewQuestion.jsx Styles */
+.question-container {
+  box-shadow: 0 0 5px rgb(122, 128, 131);
+  margin-left: 270px;
+  width: 980px;
+  margin-top: 45px;
+  padding: 35px;
+  margin-bottom: 45px;
+}
+
+.question-image {
+  width: 200px;
+  margin-left: 300px;
+  height: fit-content;
+}
+
+.question-details {
+  padding-top: 10px;
+}
+
+.question-description {
+  text-align: justify;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.question-title {
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+.profiledetails {
+  display: flex;
+}
+
+.profiledetails .postedtime {
+  margin-top: 16px;
+}
+
+/* Comment Styles */
+.forum-comment {
+  border-top: rgb(221, 217, 217);
+  border-top-style: ridge;
+  border-left: rgb(221, 217, 217);
+  border-left-style: ridge;
+  border-top-left-radius: 3px;
+  padding-top: 5px;
+  padding-left: 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.forum-comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #741cef;
+}
+
+.forum-com {
+  display: flex;
+}
+
+.forumcomuser {
+  margin-right: 13px;
+  font-size: 11px;
+}
+
+.forumcomdate {
+  font-size: 10px;
+  margin-top: -17px;
+}
+
+.forum-comment-actions {
+  display: flex;
+  cursor: pointer;
+  color: #120661;
+}
+
+.forum-comment-actions button {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 55px;
+  height: 25px;
+}
+
+.forum-comment-actions button:hover {
+  background-color: rgb(126, 165, 187);
+}
+
+.forum-write-comment {
+  display: flex;
+  align-items: center;
+}
+
+.forumcomsection {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 55px;
+}
+
+.forum-write-comment button {
+  padding: 10px 20px;
+  background-color: rgb(44, 135, 183);
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.forum-write-comment button:hover {
+  background-color: rgb(126, 165, 187);
+}
+
+.forum-write-comment textarea {
+  margin-right: 2px;
+}
+
+.forum-comment-replies button {
+  margin-left: 20px;
+  background-color: rgb(44, 135, 183);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 55px;
+  height: 25px;
+}
+
+.forum-comment-replies button:hover {
+  background-color: rgb(126, 165, 187);
+}
+
+.profilepic .authorProfilePicture {
+  width: 20px;
+  height: 20px;
+  border: #000;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.profilepic .authorUsername {
+  margin-top: 15px;
+}
+
+.profilepic {
+  display: flex;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile .postedtime {
+  margin-top: 16px;
+}
+
+.forum-comment-actions .like {
+  background-color: white;
+  color: rgb(35, 165, 11);
+  width: 25px;
+  margin-right: 5px;
+}
+
+.forum-comment-actions .like:hover {
+  background-color: rgb(35, 165, 11);
+  color: white;
+}
+
+.forum-comment-actions .dislike {
+  background-color: white;
+  color: rgb(207, 36, 21);
+  width: 25px;
+  margin-right: 5px;
+}
+
+.forum-comment-actions .dislike:hover {
+  background-color: rgb(207, 36, 21);
+  color: white;
+}
+
+.forum-comment-actions .reply {
+  background-color: white;
+  color: rgb(21, 120, 207);
+  width: 25px;
+  margin-right: 5px;
+}
+
+.forum-comment-actions .reply:hover {
+  background-color: rgb(21, 120, 207);
+  color: white;
+}
+
+.toggle-replies {
+  color: #007bff;
+  border: none;
+  padding: 5px;
+  background-color: white;
+}
+
+.forum-comment-actions .deletebutton {
+  display: flex;
+  cursor: pointer;
+  color: #120661;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .forumButton {
+    margin-right: 4em;
+  }
+
+  .forumButton button {
+    margin-left: 100px;
+  }
+
+  .forumtext {
+    width: 600px;
+    margin-left: 100px;
+  }
+
+  .question-container {
+    width: 80%;
+    margin-left: 50px;
+  }
+
+  .question-image {
+    width: 150px;
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .forumButton {
+    margin-right: 2em;
+  }
+
+  .forumButton button {
+    margin-left: 50px;
+  }
+
+  .upperbody {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .forumtext {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .question-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .question-image {
+    width: 100px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .forumButton {
+    margin-right: 1em;
+  }
+
+  .forumButton button {
+    width: 150px;
+    height: 40px;
+    font-size: medium;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+
+  .forumtext {
+    width: 90%;
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 32px;
+    padding-top: 40px;
+  }
+
+  .question-container {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .question-image {
+    width: 80px;
+    margin-left: 0;
+  }
+
+  .pagination .b2,
+  .pagination .b1 {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
